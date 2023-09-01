@@ -11,7 +11,7 @@ public class Question_04_08 {
 
         char x = (char) ascii;
 
-        System.out.printf("The character for ASCII code %d is %c",ascii,x);
+        System.out.printf("\nThe character for ASCII code %d is %c",ascii,x);
 
     }
 }

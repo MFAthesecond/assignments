@@ -12,30 +12,36 @@ public class Question_04_18 {
         char major = user.charAt(0);
         char number = user.charAt(1);
 
+        String field = "";
+        String clas = "";
+
         switch (major) {
             case 'M':
-                System.out.print("Mathematics ");
+                field = "Mathematics ";
                 break;
             case 'C':
-                System.out.print("Computer Science ");
+                field = "Computer Science ";
                 break;
             case 'I':
-                System.out.print("Information Technology ");
+                field = "Information Technology ";
                 break;
         }
         switch (number) {
             case '1':
-                System.out.print("Freshman");
+                clas = "Freshman";
                 break;
             case '2':
-                System.out.print("Sophomore");
+                clas = "Sophomore";
                 break;
             case '3':
-                System.out.print("Junior");
+                clas = "Junior";
                 break;
             case '4':
-                System.out.print("Senior");
+                clas = "Senior";
                 break;
         }
+        if (field == "" || clas == "") {
+            System.out.println("Invalid input");
+        } else System.out.println(field + clas);
     }
 }
